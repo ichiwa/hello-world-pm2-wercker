@@ -17,7 +17,7 @@ deploy-production:
     - create-file:
         name: Create private key
         filename: $SSH_PRIVATE_KEY_PATH
-        content: $SSH_PRIVATE_KEY
+        content: $SSH_PRIVATE
         overwrite: true
         hide-from-log: true
     - script:

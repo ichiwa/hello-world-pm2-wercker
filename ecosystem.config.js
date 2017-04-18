@@ -31,12 +31,12 @@ module.exports = {
     production : {
       user : 'node',
       "key"  : keyPath,
-      "user" : "user",
-      "host" : [HOST],
+      "user" : "devalon",
+      "host" : [process.env.HOST],
       "ref"  : "origin/master",
-      "repo" : "https://"+user+":"+password+"@github.com/<REPOSITORY>",
+      "repo" : "https://"+user+":"+password+"@github.com/ichiwa/hello-world-pm2-wercker.git",
       "ssh_options" : "StrictHostKeyChecking=no",
-      "path" : "/home/user",
+      "path" : "/home/devalon",
       "post-setup" : "npm install",
       "post-deploy" : ". ~/.profile && pm2 reload ecosystem.config.js --env production"
     }
