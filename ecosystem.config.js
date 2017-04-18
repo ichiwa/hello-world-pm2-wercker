@@ -11,7 +11,7 @@ module.exports = {
 
     // First application
     {
-      name      : 'hello-world',
+      name      : "hello-world",
       script    : "npm",
       args      : "start",
       env: {
@@ -29,14 +29,13 @@ module.exports = {
    */
   deploy : {
     production : {
-      user : 'node',
       "key"  : keyPath,
-      "user" : "devalon",
+      "user" : "ichiwa",
       "host" : [process.env.HOST],
       "ref"  : "origin/master",
       "repo" : "https://"+user+":"+password+"@github.com/ichiwa/hello-world-pm2-wercker.git",
       "ssh_options" : "StrictHostKeyChecking=no",
-      "path" : "/home/devalon/hello-world-pm2-wercker",
+      "path" : "/home/ichiwa/hello-world-pm2-wercker",
       "post-setup" : "npm install",
       "post-deploy" : "pm2 restart ecosystem.config.js --env production"
     }
