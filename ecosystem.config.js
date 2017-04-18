@@ -18,7 +18,8 @@ module.exports = {
         COMMON_VARIABLE: 'true'
       },
       env_production : {
-        NODE_ENV: 'production'
+        NODE_ENV: 'production',
+        PORT: 8994
       }
     }
   ],
