@@ -44,4 +44,4 @@ deploy-production:
     - script:
         name: Deploy production
         code: |
-          pm2 deploy ecosystem.config.js production
+          pm2 deploy ecosystem.config.js production update
