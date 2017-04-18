@@ -37,8 +37,7 @@ module.exports = {
       "repo" : "https://"+user+":"+password+"@github.com/ichiwa/hello-world-pm2-wercker.git",
       "ssh_options" : "StrictHostKeyChecking=no",
       "path" : "/home/devalon/hello-world-pm2-wercker",
-      "post-setup" : "npm install",
-      "post-deploy" : "pm2 startOrRestart ecosystem.config.js --env production"
+      "post-setup" : "npm install"
     }
   }
 };
