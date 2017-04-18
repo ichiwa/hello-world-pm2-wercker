@@ -15,11 +15,10 @@ module.exports = {
       script    : "npm",
       args      : "start",
       env: {
-        COMMON_VARIABLE: 'true'
+        PORT: 8994
       },
       env_production : {
-        NODE_ENV: 'production',
-        PORT: 8994
+        NODE_ENV: 'production'
       }
     }
   ],
