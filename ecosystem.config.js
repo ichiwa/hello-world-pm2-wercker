@@ -38,7 +38,7 @@ module.exports = {
       "ssh_options" : "StrictHostKeyChecking=no",
       "path" : "/home/devalon/hello-world-pm2-wercker",
       "post-setup" : "npm install",
-      "post-deploy" : "pm2 reload ecosystem.config.js --env production"
+      "post-deploy" : "pm2 restart ecosystem.config.js --env production"
     }
   }
 };
